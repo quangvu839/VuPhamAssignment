@@ -40,3 +40,10 @@ types:
               type: AmericanFlight
               examples:
                 output: !include examples/AmericanFlightExample.raml
+    delete:
+      responses:
+        200:
+          body:
+            application/json:
+              example:
+                message: Flight delete but not really
