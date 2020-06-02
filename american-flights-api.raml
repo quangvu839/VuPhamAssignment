@@ -3,7 +3,12 @@ title: American Flights API
 
 /flights:
   get:
-    
+    queryParameters:
+      destination:
+        required: false
+        enum:
+          - SFO
+          -   
   post:
 
   /{ID}:
