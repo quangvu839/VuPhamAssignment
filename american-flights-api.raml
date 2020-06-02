@@ -47,3 +47,15 @@ types:
             application/json:
               example:
                 message: Flight delete but not really
+    put:
+      body:
+        application/json:
+          type: AmericanFlight
+          examples:
+            input: !include examples/AmericanFlightNoIDExample.raml
+      responses:
+        200:
+          body:
+            application/json:
+              example:
+                message: Flight updated (but not really)
